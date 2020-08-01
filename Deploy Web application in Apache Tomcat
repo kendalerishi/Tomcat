@@ -1,0 +1,14 @@
+1. Crete .war file in Eclipse
+2. Copy that .war file to webapp folder under Tomcat directory
+3. Goto bin folder. Start Tomcat server using startup file (either windows batch file or Shell script file)
+4. Goto browser. Run http://localhost:8080/
+and then open Manager App
+OR
+Run http://localhost:8080/StrutsFileUploader
+5. If browser asks for Tomcat Manager Password to open Manager App then :
+a. Open conf folder
+b. Edit tomcat-users.xml file
+c. Add below code before </tomcat-users>
+<role rolename="manager-gui"/>
+<user username="admin" password="admin" roles="manager-gui"/>
+d. Open Manager App and reload the application and run it. 
